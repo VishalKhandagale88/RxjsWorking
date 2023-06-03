@@ -6,6 +6,10 @@ const routes: Routes = [
   {
     path:"promise",
     component:PromiseComponent
+  },
+  {
+    path:"**",
+    component:PromiseComponent
   }
 ];
 
