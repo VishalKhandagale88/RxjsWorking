@@ -53,10 +53,6 @@ export class PromiseComponent implements OnInit {
     //------------------------------------------------------------
 
   }
-  callAFunction() {
-    console.log("button clicked and function is called");
-
-  }
   availableProducts() {
     return true;
   }
