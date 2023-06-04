@@ -7,6 +7,9 @@ import { HeaderComponent } from './header/header.component';
 import { PromiseComponent } from './promise/promise.component';
 import { PromiseImplementationComponent } from './promise-implementation/promise-implementation.component';
 import { ObservableComponent } from './observable/observable.component';
+import { ListComponent } from './observable/list/list.component';
+import { FromeventComponent } from './observable/fromevent/fromevent.component';
+
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { ObservableComponent } from './observable/observable.component';
     HeaderComponent,
     PromiseComponent,
     PromiseImplementationComponent,
-    ObservableComponent
+    ObservableComponent,
+    ListComponent,
+    FromeventComponent,
+
   ],
   imports: [
     BrowserModule,
