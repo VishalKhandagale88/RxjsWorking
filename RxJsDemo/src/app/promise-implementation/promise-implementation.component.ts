@@ -18,7 +18,7 @@ export class PromiseImplementationComponent implements OnInit {
     return "Data received";
   }
 
-  carData: any ;
+  carData: any;
 
   car = {
     "name": "Mahindra Thar",
@@ -42,29 +42,29 @@ export class PromiseImplementationComponent implements OnInit {
   }
 
   //Ex 2 :Using Async / Await
-  dataForFetch2:any;
-  async fetchData2(){
-    this.dataForFetch2="featching...."
+  dataForFetch2: any;
+  async fetchData2() {
+    this.dataForFetch2 = "featching...."
     let data = await this.buyCar;
-    this.dataForFetch2=JSON.stringify(data);
+    this.dataForFetch2 = JSON.stringify(data);
   }
 
   //Ex 3 : using fetch api
-  dataFromJsonPlaceholder= fetch('https://jsonplaceholder.typicode.com/todos')
-                                .then(response => response.json())
-  dataForFetch3:any;
-  fetchData3(){
-    this.dataForFetch3="featching...."
-   this.dataFromJsonPlaceholder.then(result=>{
-    this.dataForFetch3=JSON.stringify(result);
-   })
+  dataFromJsonPlaceholder = fetch('https://jsonplaceholder.typicode.com/todos')
+    .then(response => response.json())
+  dataForFetch3: any;
+  fetchData3() {
+    this.dataForFetch3 = "featching...."
+    this.dataFromJsonPlaceholder.then(result => {
+      this.dataForFetch3 = JSON.stringify(result); // here jason data is converted into string format
+    })
   }
 
   //Ex 4 :using async / await with fetch api
-  dataForFetch4:any;
-  async fetchData4(){
-    this.dataForFetch4="fetching....";
+  dataForFetch4: any;
+  async fetchData4() {
+    this.dataForFetch4 = "fetching....";
     let res = await this.dataFromJsonPlaceholder;
-    this.dataForFetch4 = JSON.stringify(res);
+    this.dataForFetch4 = JSON.stringify(res); // here json data is converted into string format
   }
 }

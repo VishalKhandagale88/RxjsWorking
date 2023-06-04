@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { PromiseComponent } from './promise/promise.component';
 import { PromiseImplementationComponent } from './promise-implementation/promise-implementation.component';
+import { ObservableComponent } from './observable/observable.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     PromiseComponent,
-    PromiseImplementationComponent
+    PromiseImplementationComponent,
+    ObservableComponent
   ],
   imports: [
     BrowserModule,
