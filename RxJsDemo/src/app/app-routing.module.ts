@@ -18,10 +18,10 @@ const routes: Routes = [
     path:"observable",
     component:ObservableComponent,children:[
       {
-        path:"list",
+        path:"",
         component:ListComponent
       },{
-        path:"from-event",
+        path:"fromEvent",
         component:FromeventComponent
       }
     ]
